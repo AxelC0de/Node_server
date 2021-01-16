@@ -1,7 +1,9 @@
 const fs = require('fs');
 const http = require('http');
 
- let addTodo = function(todo, path){
+
+TODO: //рефактор кода: избавиться от лишних переменных.
+ let addTodo = function(erl, path){
 // 1. Получаем информацию из файла
 let fileContent = fs.readFileSync(path, "utf8");
 let fileContentParsed = JSON.parse(fileContent)
@@ -12,22 +14,19 @@ fileContentParsed['todoList'].push(todo)
 // 3. Записать файл с новыми данными
 let fileContentstringified = JSON.stringify(fileContentParsed)
 fs.writeFileSync(path, fileContentstringified)
-
-
-
 }
 
 console.log('Начинаю записывать новой Todo');
 
-addTodo(
-	{
-		todo:'помыть полы',
-		id: new Date().getMilliseconds(),
-		isDone: false
-	},
-	'./state/todo_list.json'
-	);
+// addTodo(
+// 	{
+// 		todo:'помыть полы',
+// 		id: new Date().getMilliseconds(),
+// 		isDone: false
+// 	},
+// 	'./state/todo_list.json'
+// 	);
 
 
-	removeTodo('12345123','./state/todo_list.json')
+	// removeTodo('12345123','./state/todo_list.json')
 console.log('Запись данных завершена');

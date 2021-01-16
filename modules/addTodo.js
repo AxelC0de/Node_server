@@ -1,0 +1,1 @@
+TODO // вынести сюда функцию addTodo из index.js
