@@ -1,0 +1,19 @@
+{
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelC0de/Node_server.git"
+  },
+  "author": "Grigorev Alexey <alexey4099@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelC0de/Node_server/issues"
+  },
+  "homepage": "https://github.com/AxelC0de/Node_server#readme"
+}
